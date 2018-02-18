@@ -1,0 +1,26 @@
+" Miroslav Vidović
+"
+" gvimrc
+"
+" -----------------------------------------------------------------------------
+" Settings for GVim only
+" -----------------------------------------------------------------------------
+" On start GVim  will first load .vimrc settings and then .gvimrc (this file)
+" Most of these settings override the .vimrc settings for better visual
+" presentation outside of the terminal.
+" -----------------------------------------------------------------------------
+"
+colorscheme desert
+
+" Disable Gui features
+" Hide the toolbar
+set guioptions-=T
+" Disable left scrollbar
+set guioptions-=L
+set guioptions-=l
+" Disable right scrollbar
+set guioptions-=R
+set guioptions-=r
+
+" Show current mode in command-line.
+set showmode
