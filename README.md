@@ -9,13 +9,13 @@ Once [invoked](#keybinding), vim-anywhere will open a buffer. Close it and its
 contents are copied to your __clipboard__ and your previous application is
 refocused.
 
+## Info
+
+This is a fork of the original [vim-anywhere](https://github.com/cknadler/vim-anywhere) optimised for Linux systems and simplified to remove possible bugs and issues. 
+
 ## Installation
 
 #### Requirements
-
-__OSX:__
-
-- MacVim (`brew install macvim`)
 
 __Linux:__
 
@@ -25,11 +25,8 @@ __Linux:__
 #### Install
 
 ```bash
-curl -fsSL https://raw.github.com/cknadler/vim-anywhere/master/install | bash
+curl -fsSL https://raw.github.com/miroslavvidovic/vim-anywhere/master/install | bash
 ```
-
-__OSX caveat:__ key binding is unbound by default. See [keybinding](#keybinding)
-for details.
 
 #### Update
 
@@ -45,15 +42,13 @@ for details.
 
 ## Keybinding
 
-__OSX:__ ( default = unbound, suggested = `ctrl+cmd+v` )
-
-The keyboard shortcut for invoking vim-anywhere is unbound by default on OSX.
-The installation script will automatically open
-`System Preferences > Keyboard > Shortcuts`. Fill in the following:
-
-![keyboard shortcut](assets/shortcut.png)
-
-__Linux:__ ( default = `ctrl+alt+v` )
+*xbindkey*
+append
+```
+"./.vim-anywhere/bin/run"
+ control+alt + v
+```
+to your .xbindkeysrc
 
 *Gnome*
 ```bash
